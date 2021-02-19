@@ -1,0 +1,42 @@
+#operator practice with string
+#author- deeksha
+#--------------------------------------------------
+
+read -p "enter first word " first
+read -p "enter second word "  second
+
+if [ $first ==  $second ]
+then
+echo "both words are equal"
+fi
+
+if [ $first !=  $second ]      #check if string values are not equal
+then
+echo "both words are not  equal"
+fi
+
+read -p "enter third  word " third
+
+if [ -z $third ]               #check if string is null
+then
+echo "third  word is  null"
+else
+echo "third  word  is not null"
+fi
+
+if [ -n $third ]               #check if string is not null
+then
+echo "third  word is not null/size of string is not-zero"
+else
+echo "third  word  is null/size of string is zero"
+fi
+
+
+file="operator_script.sh"
+
+if [ -f $file ]                #check for the file if it exist in current directory
+then
+echo "file exist"
+else
+echo "file not exist"
+fi

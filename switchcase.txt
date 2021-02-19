@@ -1,0 +1,35 @@
+#practice switch case
+#author- deeksha
+#----------------------------------------
+
+
+read -p "enter your name " name
+
+case $name in
+
+"apple") echo "it is a fruit"               #if user input hero this value is printed
+;;
+"black") echo "it is a colour"
+;;
+"autumn") echo "it is a season"
+;;
+
+*) echo "invalid input please  give input apple or black or autumn"
+
+esac
+echo "--------------------"
+
+read -p "enter the character " exp
+
+case $exp in
+  [A-Z])  echo "is an uppercase letter"
+  ;;
+  [a-z])  echo "is an lowecase letter"
+  ;;
+  [0-9]) echo "is a number"
+  ;;
+
+  *)  
+       echo   "invalid expression"
+
+esac

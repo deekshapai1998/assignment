@@ -1,0 +1,21 @@
+#practicing variables and taking input from the user
+#author- deeksha 
+#----------------------------------------
+
+echo "heyy! I'm deeksha"
+
+number_1=10
+number_2=30
+
+echo "first number is" $number_1 "and second number is" $number_2 
+
+echo "enter your favourate number"
+read number_3
+echo "your fav no  is" $number_3
+
+read -p "enter your favourate colour " favouratecolour
+echo "your favourate colour is " $favouratecolour
+
+read -p "enter your first name " fname
+read -p "enter your last name  " lname
+echo "your full name is" $fname $lname
